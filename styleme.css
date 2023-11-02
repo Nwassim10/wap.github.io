@@ -22,4 +22,8 @@ a:hover {
 a{
     text-decoration: none;
 }
+p::first-letter {
+  
+    font-size: xx-large;
+  }
 
