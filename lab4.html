@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+
+            border: none;
+            background-color: rgb(28, 197, 141);
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .selected {
+            background-color: transparent;
+            border: none;
+        }
+
+        .picOne {
+            position: relative;
+            display: block;
+            width: 15em;
+            height: 2em;
+            line-height: 3;
+            overflow: hidden;
+            border-radius: .25em;
+            padding-bottom: 10px;
+            background-color: rgb(224, 222, 222);
+        }
+
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .meal {
+            position: relative;
+            display: block;
+            width: 15em;
+            height: 2em;
+            line-height: 3;
+            overflow: hidden;
+            border-radius: .25em;
+            padding-bottom: 10px;
+        }
+
+        label {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: small;
+        }span{
+            color: red;
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+    <h1>Workshop registration&nbsp;&nbsp;&nbsp;&nbsp;
+        <select class="selected">
+            <option disabled selected>More Actions</option>
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+        </select>
+    </h1>
+    <u>Register now while seats are availabe!</u>
+    <br>
+    <br>
+    <br>
+    <div style="display: flex; gap: 150px;flex-flow: row;">
+        <div>
+            <form action="#">Firstname<span>*</span>:</form>
+            <br>
+            <br>
+            <form action="#">lastname<span>*</span>:</form>
+            <br>
+            <br>
+            <form action="#">Company / Institution<span>*</span>:</form>
+            <br>
+            <br>
+            <form action="#">Address<span>*</span>:</form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="#">City :</form>
+            <br>
+            <br>
+            <form action="#">State / Province / Region :</form>
+            <br>
+            <br>
+            <form action="#">Country :</form>
+            <br>
+            <br>
+            <form action="#">Email<span>*</span>:</form>
+            <br>
+            <br>
+            <form action="#">Phone Number<span>*</span>:</form>
+
+
+        </div>
+        <div>
+            <form action="#"><input type="text" name="Firstname" /></form>
+            <br>
+            <br>
+            <form action="#"><input type="text" name="lastname" /></form>
+            <br>
+            <br>
+            <form action="#"><input type="text" name="Company" /></form>
+            <br>
+            <br>
+            <form action="#"><input type="text" name="Address" style="height: 90px;" /></form>
+            <br>
+            <form action="#"><input type="text" name="Company" /></form>
+            <br>
+            <br>
+            <select class="picOne">
+                <option disabled selected>-Select-</option>
+                <option value="1">Iowa</option>
+                <option value="2">Louisiana</option>
+                <option value="3">Michigan</option>
+                <option value="4">Georgia</option>
+                <option value="5">Florida</option>
+                <option value="6">Texas</option>
+            </select>
+            <br>
+            <br>
+            <select class="picOne">
+                <option disabled selected>-Select-</option>
+                <option value="1">TUNISIA</option>
+                <option value="2">USA</option>
+                <option value="3">UK</option>
+                <option value="4">FRANCE</option>
+                <option value="5">GERMANY</option>
+                <option value="6">ITALY</option>
+            </select>
+            <br>
+            <form action="#"><input type="text" name="Email" /></form>
+            <br>
+            <br>
+            <form action="#"><input type="text" name="Number" /></form>
+        </div>
+        <div>
+
+            <form action="#"><u>Lunch</u></form>
+            <br>
+            <br>
+            <form action="#">Meal Preference :</form>
+            <br>
+            <br>
+            <form action="#"><u>Payment Details</u></form>
+            <br>
+            <br>
+            <form action="#">Payment Mode </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="#">DD/Cheque No. </form>
+            <br>
+            <br>
+            <form action="#">Drawn On (Bank Name) </form>
+            <br>
+            <br>
+            <form action="#">Payable at </form>
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+            <select class="meal">
+                <option disabled>-Select-</option>
+                <option value="1" selected>Standard</option>
+                <option value="2">Pescetarian</option>
+                <option value="3">Vegetarian</option>
+                <option value="4">Lacto-vegetarian</option>
+                <option value="5">Ovo-vegetarian</option>
+                <option value="6">Vegan</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form>
+                <input type="radio" class="radio" value="1" name="fooby[1][]">
+                <label for="choice1"> Cash</label><br>
+                <input type="radio" class="radio" value="1" name="fooby[1][]">
+                <label for="choice2"> Cheque</label><br>
+                <input type="radio" class="radio" value="1" name="fooby[1][]">
+                <label for="choice3"> Demand Draft</label><br><br>
+            </form>
+            <br>
+            <form action="#"><input type="text" name="Number" /></form>
+            <br>
+            <br>
+            <form action="#"><input type="text" name="Number" /></form>
+            <br>
+            <br>
+            <form action="#"><input type="text" name="Number" /></form>
+
+        </div>
+
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center; background-color: gray; padding:10px;">
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+
+    </div>
+    <br>
+    <br>
+    <footer style="text-align: center;">
+       
+            <a href="https://validator.w3.org/nu/?doc=https://nwassim10.github.io/wap.github.io/">
+                <img src="htmlchecker.png" alt="html validator" width="80" height="40"/>
+            </a>
+        
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
